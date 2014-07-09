@@ -58,15 +58,11 @@
     </div>
     
     <div class="container-fluid bg-circles-footer">      
-
         <div class="container feedback">      
           <div class="row">
             
             <div class="col-xs-4">
-              <p><h4>Обратная связь</h4></p>
-              <p><textarea name="NAME" id="111" rows="1">ИМЯ</textarea></p>
-              <p><textarea name="PHONE" id="111" rows="1">ТЕЛЕФОН</textarea></p>
-              <input class="btn btn-danger btn-block btn-orange" type="submit" value="ОТПРАВИТЬ">
+              <?php echo do_shortcode( '[contact-form-7 id="24" title="Обратная связь"]' ); ?>
             </div>
 
             <div class="col-xs-4">
@@ -77,34 +73,15 @@
             </div>
 
             <div class="col-xs-4">
-              <p><h4>Карта проезда</h4></p>
-              <a href="#" class="map">
-                <img src="images/map.png" alt="">
-              </a>
-            </div>   
+              <h4>Карта проезда</h4>
+                <img src="<?php bloginfo('template_directory');?>/images/map.png" alt="">
+            <div>   
           
           </div>
         </div>    
 
     </div>
 
-
-
-
-	<div class="container">
-		<div class="row">
-			<div class="site-footer-inner col-sm-12">
-
-				<div class="site-info">
-					<?php do_action( '_tk_credits' ); ?>
-					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_tk' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_tk' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-					<?php printf( __( 'Theme: %1$s by %2$s.', '_tk' ), '_tk', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-				</div><!-- close .site-info -->
-
-			</div>
-		</div>
-	</div><!-- close .container -->
 </footer><!-- close #colophon -->
 
 <?php wp_footer(); ?>
