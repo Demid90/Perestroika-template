@@ -67,6 +67,7 @@ function _tk_setup() {
 	*/
 	register_nav_menus( array(
 		'primary'  => __( 'Header bottom menu', '_tk' ),
+		'primary-bottom'  => __( 'Footer menu', '_tk' )
 	) );
 
 }

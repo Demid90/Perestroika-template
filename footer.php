@@ -19,38 +19,17 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <ul class="bottom-nav-menu">
-                <li>
-                  <a href="">
-                    Стройматериалы   
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Все для бани
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Инструменты
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Инструменты
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Дача и сад
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Распродажа
-                  </a>
-                </li>
-              </ul>
+
+            <?php wp_nav_menu(
+                array(
+                  'theme_location' => 'primary-bottom',
+                  'container_class' => '',
+                  'menu_class' => 'bottom-nav-menu',
+                  'fallback_cb' => '',
+                  'menu_id' => 'main-menu-bot'
+                )
+              ); ?>
+   
             </div>
           </div>  
         </div>
