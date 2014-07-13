@@ -249,7 +249,7 @@ object {
 
 .top-nav-menu li{
 	display: inline-block;
-	padding: 15px 20px;
+	float: left;
 	border-right: 1px solid #dadada;
 }
 
@@ -270,7 +270,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', end
 
 .top-nav-menu li a{ 
 	color: #000000;
-	padding-top: 24px;
+	padding: 15px;
+	display: block;
 }
 
 .content-news{
